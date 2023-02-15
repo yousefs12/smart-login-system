@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System - Sign In</title>
+
+    <!-- Linking External Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center my-4">Smart Login System</h1>
+        
+        <div class="text-center">
+            <h2>Login</h2>
+
+            <input type="text" id="email" name="email" placeholder="E-mail" class="form-control my-3">
+            <div class="alert alert-danger text-start d-none" id="invalidEmail">Please enter a valid e-mail ....@gmail.com</div>
+            <div class="alert alert-danger text-start d-none" id="wrongEmail">This e-mail is not registered</div>
+
+            <input type="password" name="password" id="password" placeholder="Password" class="form-control my-3">
+            <div class="alert alert-danger text-start d-none" id="invalidPassword">Please enter the password.</div>
+            <div class="alert alert-danger text-start d-none" id="wrongPassword">Incorrect password.</div>
+
+
+            <button type="submit" class="btn btn-primary" id="signInBtn">Login</button>
+
+            <div class="my-4">
+                <label for="signUp">Don't have an account?</label>
+                <button type="submit" class="btn btn-outline-primary mx-2"><a href="sign-up.html" class="nav-link">Sign Up</a></button>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
